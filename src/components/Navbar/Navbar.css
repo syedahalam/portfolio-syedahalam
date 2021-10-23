@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+	--primary-white: #fff;
+	--primary-orange: #f9ab00;
+	--primary-dark: rgba(255,255,255,0);
+
+}
+
+body {
+	background-image: url('../images/bbg2.jpg');
+	font-family: 'Roboto', sans-serif;
+}
+.logo {
+	width: 6rem;
+	color: red;
+}
+/* menu links */
+nav a.nav-link {
+	font-weight: 500;
+	letter-spacing: 0.0375rem;
+	cursor: pointer;
+}
+nav ul li {
+	text-transform: uppercase;
+}
+.navbar-nav > li > a {
+	margin-right: 0.7rem;
+	margin-left: 0.7rem;
+	color: var(--primary-white) !important;
+    border-top:0.18rem solid var(--primary-dark);
+}
+.navbar-brand {
+	 max-width: 17.25rem;
+	padding: 0 !important;
+	/* height: 6rem !important;   */
+    color: white !important;
+    /* font-weight: 15rem !important; */
+}
+.navbar-nav >li > a.active, .navbar-nav > li > a.active:focus{
+    border-top: 0.18rem solid var(--primary-orange);
+}
+.navbar-nav >li > a:hover{
+    border-top: 0.18rem solid var(--primary-orange);
+}
