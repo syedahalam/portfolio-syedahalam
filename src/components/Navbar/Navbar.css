@@ -4,11 +4,16 @@
 	--primary-white: #fff;
 	--primary-orange: #f9ab00;
 	--primary-dark: rgba(255,255,255,0);
+	--primary-red:rgb(100, 16, 16);
+	--primary-hover-red:rgb(145, 34, 34);
 
+}
+nav{
+	z-index: 2;
 }
 
 body {
-	background-image: url('../images/bbg2.jpg');
+	
 	font-family: 'Roboto', sans-serif;
 }
 .logo {
