@@ -9,7 +9,7 @@ const Navbar = () => {
 	return (
 		<nav className='navbar navbar-expand-lg navbar-light bg-dark sticky-top'>
 			<div className='container'>
-				<Link className='navbar-brand' href='#'>
+				<Link className='navbar-brand' to='home' href='#'>
 					SHA
 				</Link>
 				<button

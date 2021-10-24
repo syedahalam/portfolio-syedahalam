@@ -145,10 +145,10 @@ const Projects = () => {
 	};
 	///////////////////////
 	return (
-		<div className='portfolio-wrapper'>
+		<div id='projects' className='portfolio-wrapper'>
 			<div className='container'>
 				<h1 className=' heading-project text-uppercase text-center py-4'>
-					Portfolio
+					Projects
 				</h1>
 				<div className='image-box-wrapper row justify-content-center'>
 					<div className='portfolio-image-box' onClick={openPopupboxTrivia}>

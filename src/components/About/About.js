@@ -4,7 +4,7 @@ import img from '../images/1.jpeg'
 
 const About = () => {
     return (
-			<div className='container py-s'>
+			<div id='about' className='container py-s'>
 				<div className='row'>
 					<div className='col-lg-6 col-xm-12'>
                         <h2 className='about-heading py-5'>About Me</h2>
