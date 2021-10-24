@@ -1,8 +1,9 @@
 .portfolio-wrapper{
     /* background-color: gray; */
-    /* padding: 3rem 0; */
+     padding: 3rem 0; 
    text-align: center;
-   
+   /* margin-top: 3rem; */
+   /* background: black; */
 
 }
 .portfolio-img{
@@ -17,7 +18,8 @@
     margin: 1rem;
 }
 .heading-project{
-    margin-top:2rem;
+    margin-top:6rem;
+    color: orange;
 }
 /* .image-box-wrapper{
     display: flex !important;

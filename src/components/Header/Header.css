@@ -7,8 +7,8 @@
 }
 .main-info{
     display: flex;
-    /* position: absolute; */
-    /* top: 0;
+    /* position: absolute; 
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0; */
@@ -50,7 +50,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    background-color: var(--primary-orange);
+    /* background-color: var(--primary-orange); */
     color:var(--primary-white);
     transition: 0.2s all;
 }
@@ -61,41 +61,66 @@ a:hover{
     width: 100vh;
     z-index: 1;
 }
-@media(min-width:375px){
+@media(max-width:375px){
     .tsparticles-canvas-el{
-        /* display: none;  */
+        display: none !important; 
     }
     h1{
-        font-size: 2rem !important;
+        font-size: 1rem !important;
     }
     .typed-text{
-        font-size: 1.5rem;
+        font-size: 2rem !important;
     }
     .btn-main-contact{
-
+        font-size: 1.5rem !important;
     }
 }
-@media(min-width:768px){
+@media(max-width:768px){
     
     h1{
-        font-size: 2.5rem !important;
+        font-size: 3rem !important;
     }
     .typed-text{
         font-size: 2rem;
     }
     .btn-main-contact{
+        font-size: 1rem;
 
     }
 }
-@media(min-width:1280px){
+@media(max-width:1280px){
    
     h1{
-        font-size: 4rem;
+        font-size: 4rem !important;
     }
     .typed-text{
         font-size: 3rem;
     }
     .btn-main-contact{
         font-size: 2rem;
+    }
+}
+@media(max-width:280px){
+   
+    h1{
+        font-size: 2rem !important;
+    }
+    .typed-text{
+        font-size: 1.5rem !important;
+    }
+    .btn-main-contact{
+        font-size: 1rem !important;
+    }
+}
+@media(max-width:540px){
+   
+    h1{
+        font-size: 2rem !important;
+    }
+    .typed-text{
+        font-size: 1.5rem !important;
+    }
+    .btn-main-contact{
+        font-size: 1rem !important;
     }
 }

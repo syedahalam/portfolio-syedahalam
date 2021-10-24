@@ -22,7 +22,7 @@ const Contactme = () => {
 		);
 	};
 	return (
-		<div className='contacts'>
+		<div id='contactme' className='contacts'>
 			<div className='text-center'>
 				<h1>Contact Me</h1>
 				{/* text center div */}
