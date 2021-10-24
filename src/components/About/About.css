@@ -14,7 +14,7 @@
 .about-heading{
     text-align: center;
     text-transform: uppercase;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 @media(max-width:768px){
     .photo-wrap{
