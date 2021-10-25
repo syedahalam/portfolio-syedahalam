@@ -48,3 +48,19 @@ nav ul li {
 .navbar-nav >li > a:hover{
     border-top: 0.18rem solid var(--primary-orange);
 }
+.head{
+    z-index: 20;
+    text-decoration: none;
+    color: orange !important;
+    width: 6rem;
+    height: 3rem;
+    border: 1px solid orange;
+    border-radius: 12px;
+    padding: .5rem;
+	text-align: center !important;
+}
+.head:hover{
+    background-color: orange !important;
+    color:white !important;
+    cursor: pointer;
+}

@@ -46,6 +46,13 @@ const Navbar = () => {
 								Contact
 							</Link>
 						</li>
+						<a
+							className='head'
+							href='https://drive.google.com/file/d/1Xt-tx6s9DOlWLq4C1PQxeQwTAQvthNqr/view?usp=sharing'
+							target='_blank'
+							rel='noopener noreferrer'>
+							Resume
+						</a>
 					</ul>
 				</div>
 			</div>
