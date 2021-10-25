@@ -8,7 +8,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contactme from './components/Contactme/Contactme';
 import Footer from './components/Footer/Footer';
-import Resume from './components/Resume/Resume'
+
 
 
 
@@ -41,7 +41,6 @@ function App() {
   <About />
   <Projects />
   <Contactme />
-  <Resume />
   <Footer />
   </>
 	);
