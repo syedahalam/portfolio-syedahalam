@@ -46,11 +46,6 @@ const Navbar = () => {
 								Contact
 							</Link>
 						</li>
-						<li className='nav-item'>
-							<Link smooth={true} to='resume' className='nav-link' href='#'>
-								Resume
-							</Link>
-						</li>
 					</ul>
 				</div>
 			</div>
