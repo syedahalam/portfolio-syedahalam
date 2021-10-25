@@ -32,18 +32,23 @@ const Navbar = () => {
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link smooth={true} to='about'  className='nav-link' href='#'>
+							<Link smooth={true} to='about' className='nav-link' href='#'>
 								About
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link smooth={true} to='projects'  className='nav-link' href='#'>
+							<Link smooth={true} to='projects' className='nav-link' href='#'>
 								Projects
 							</Link>
 						</li>
 						<li className='nav-item'>
 							<Link smooth={true} to='contactme' className='nav-link' href='#'>
 								Contact
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link smooth={true} to='resume' className='nav-link' href='#'>
+								Resume
 							</Link>
 						</li>
 					</ul>

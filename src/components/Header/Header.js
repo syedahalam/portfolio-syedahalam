@@ -18,14 +18,19 @@ const Header = () => {
 						backSpeed={60}
 						loop
 					/>
-					<a
-						href='#'
+					{/* <a
+						className='head'
+						href='https://docs.google.com/document/d/12ixhzQ8XAv5ZX-KthulHQCoOvCZvD1Ph78bLnnygDFU/view?usp=sharing'
+						target='_blank'>
+						Resume
+					</a> */}
+					
+
+					{/* <a
+						href=''
 						className='btn-main-contact'>
 						Resume
-					</a>
-
-
-					
+					</a> */}
 				</div>
 			</div>
 		);
