@@ -48,7 +48,7 @@ const Navbar = () => {
 						</li>
 						<a
 							className='head'
-							href='https://docs.google.com/document/d/12ixhzQ8XAv5ZX-KthulHQCoOvCZvD1Ph78bLnnygDFU/edit?usp=sharing'
+							href='https://drive.google.com/file/d/1Vg_Zneh9JQ-l-VdOqthZTBpzmPv3EmVH/view?usp=sharing'
 							target='_blank'
 							rel='noopener noreferrer'>
 							Resume
