@@ -30,7 +30,7 @@ const Projects = () => {
 					}>
 					https://github.com/syedahalam/Trivia-Game
 				</a>
-                <br />
+				<br />
 				<b>Deployed Website</b>
 				<a
 					className='hyper-link'
@@ -74,7 +74,7 @@ const Projects = () => {
 					}>
 					https://github.com/syedahalam/meal-idea
 				</a>
-                <br />
+				<br />
 				<b>Deployed Website</b>
 				<a
 					className='hyper-link'
@@ -122,7 +122,7 @@ const Projects = () => {
 					}>
 					https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client
 				</a>
-                <br />
+				<br />
 				<b>Deployed Website</b>
 				<a
 					className='hyper-link'
@@ -139,6 +139,66 @@ const Projects = () => {
 		titleBar: {
 			enable: true,
 			text: 'Tou-ring',
+		},
+		fadeIn: true,
+		fadeInSpeed: 500,
+	};
+	///////////////////////
+	///////////////
+	// Tou-ring
+	const openPopupboxTouring = () => {
+		const content = (
+			<>
+				<img
+					className='portfolio-image-popupbox'
+					src={Touring}
+					alt='Touring project'
+				/>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+					dolorem tempora qui ipsum quis culpa accusamus rem nemo nulla velit,
+					animi architecto harum quod dignissimos exercitationem fugit aperiam
+					tenetur minima?
+				</p>
+				<b>Github:</b>
+				<a
+					className='hyper-link'
+					onClick={() =>
+						window.open('https://github.com/syedahalam/ushop-front')
+					}>
+					https://github.com/syedahalam/ushop-front
+				</a>
+
+				<a
+					className='hyper-link'
+					onClick={() =>
+						window.open('https://github.com/syedahalam/ushop-back')
+					}>
+					https://github.com/syedahalam/ushop-back
+				</a>
+				<br />
+				<b>Deployed Website</b>
+				<a
+					className='hyper-link'
+					onClick={() => window.open('https://ushop-4.netlify.app/')}>
+					https://happy-shannon-d1fdea.netlify.app/
+				</a>
+
+				<a
+					className='hyper-link'
+					onClick={() =>
+						window.open('https://stormy-journey-70089.herokuapp.com')
+					}>
+					https://stormy-journey-70089.herokuapp.com
+				</a>
+			</>
+		);
+		PopupboxManager.open({ content });
+	};
+	const popupboxConfigUShop = {
+		titleBar: {
+			enable: true,
+			text: 'UShop',
 		},
 		fadeIn: true,
 		fadeInSpeed: 500,
@@ -166,11 +226,17 @@ const Projects = () => {
 						<img src={Touring} alt='touring' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
 					</div>
+
+					<div className='portfolio-image-box' onClick={openPopupboxUShop}>
+						<img src={UShop} alt='touring' className='portfolio-img' />
+						{/* <div className='overflow'></div> */}
+					</div>
 				</div>
 			</div>
 			<PopupboxContainer {...popupboxConfigTrivia} />
 			<PopupboxContainer {...popupboxConfigMeal} />
 			<PopupboxContainer {...popupboxConfigTouring} />
+			<PopupboxContainer {...popupboxConfigUShop} />
 		</div>
 	);
 };
