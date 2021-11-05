@@ -3,6 +3,7 @@ import './Projects.css';
 import Trivia from '../images/Trivia.png';
 import Meal from '../images/Meal-Idea.png';
 import Touring from '../images/Tou-ring.png';
+import UShop from '../images/ushop.png';
 // import react popup box
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import 'react-popupbox/dist/react-popupbox.css';
@@ -17,10 +18,9 @@ const Projects = () => {
 					alt='Trivia project'
 				/>
 				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-					dolorem tempora qui ipsum quis culpa accusamus rem nemo nulla velit,
-					animi architecto harum quod dignissimos exercitationem fugit aperiam
-					tenetur minima?
+					It’s a trivia about cats. Players can guess the answer from choices.
+					By the end of the game their total score is shown with the option to
+					play again or quit. Trivia is Html, CSS, Javascript based web app.
 				</p>
 				<b>Github:</b>
 				<a
@@ -61,10 +61,10 @@ const Projects = () => {
 					alt='Meal project'
 				/>
 				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-					dolorem tempora qui ipsum quis culpa accusamus rem nemo nulla velit,
-					animi architecto harum quod dignissimos exercitationem fugit aperiam
-					tenetur minima?
+					Meal Idea is built with React Js and CSS. Visitors can look into any
+					meal category they are interested in by searching or looking into
+					category links. On choosing a particular meal, they can see
+					instructions with video on how to make that particular dish.
 				</p>
 				<b>Github:</b>
 				<a
@@ -107,10 +107,12 @@ const Projects = () => {
 					alt='Touring project'
 				/>
 				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-					dolorem tempora qui ipsum quis culpa accusamus rem nemo nulla velit,
-					animi architecto harum quod dignissimos exercitationem fugit aperiam
-					tenetur minima?
+					A full stack mern web app. React, CSS, REST APIs are used as frontend
+					technologies and for backend, node, express and the mongoDB nosql
+					database. This is a full-CRUD React single page application that
+					allows users to view attractions in any city, and add their favorite
+					attractions for others to see! The Categories page lets users search
+					by city, genre, or name, and filters results for them in real time.
 				</p>
 				<b>Github:</b>
 				<a
@@ -145,20 +147,20 @@ const Projects = () => {
 	};
 	///////////////////////
 	///////////////
-	// Tou-ring
-	const openPopupboxTouring = () => {
+	// UShop
+	const openPopupboxUShop = () => {
 		const content = (
 			<>
 				<img
 					className='portfolio-image-popupbox'
-					src={Touring}
-					alt='Touring project'
+					src={UShop}
+					alt='UShop project'
 				/>
 				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-					dolorem tempora qui ipsum quis culpa accusamus rem nemo nulla velit,
-					animi architecto harum quod dignissimos exercitationem fugit aperiam
-					tenetur minima?
+					A full stack web app. React and Bootstrap are used as frontend
+					technologies and for backend, django, and postgresql as databases.
+					This is a full-CRUD React ecommerce application that allows users to
+					view their choice of products, add to cart, and shop.
 				</p>
 				<b>Github:</b>
 				<a
@@ -168,7 +170,7 @@ const Projects = () => {
 					}>
 					https://github.com/syedahalam/ushop-front
 				</a>
-
+				<br />
 				<a
 					className='hyper-link'
 					onClick={() =>
@@ -183,7 +185,7 @@ const Projects = () => {
 					onClick={() => window.open('https://ushop-4.netlify.app/')}>
 					https://happy-shannon-d1fdea.netlify.app/
 				</a>
-
+					<br />
 				<a
 					className='hyper-link'
 					onClick={() =>
