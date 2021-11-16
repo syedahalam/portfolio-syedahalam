@@ -36,7 +36,7 @@ const Contactme = () => {
 								id='name'
 								type='text'
 								className='form-control'
-								placeholder='name'
+								placeholder='Name'
 								name='name'
 							/>
 							{/* cell input */}
@@ -44,7 +44,7 @@ const Contactme = () => {
 								id='phone'
 								type='text'
 								className='form-control'
-								placeholder='phone'
+								placeholder='Phone'
 								name='phone'
 							/>
 							{/* email input */}
@@ -52,7 +52,7 @@ const Contactme = () => {
 								id='email'
 								type='email'
 								className='form-control'
-								placeholder='email'
+								placeholder='Email'
 								name='email'
 							/>
 							{/* subject input */}
@@ -60,7 +60,7 @@ const Contactme = () => {
 								id='subject'
 								type='text'
 								className='form-control'
-								placeholder='subject'
+								placeholder='Subject'
 								name='subject'
 							/>
 						</div>
@@ -70,7 +70,7 @@ const Contactme = () => {
 								className='form-control'
 								id='description'
 								type='text'
-								placeholder='Email'
+								placeholder='Text Area'
 								name='description'></textarea>
 
 							<button className='btn-main-offer contact-btn' type='submit'>
