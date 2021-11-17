@@ -70,7 +70,7 @@ const Contactme = () => {
 								className='form-control'
 								id='description'
 								type='text'
-								placeholder='Text Area'
+								placeholder='Message'
 								name='description'></textarea>
 
 							<button className='btn-main-offer contact-btn' type='submit'>
