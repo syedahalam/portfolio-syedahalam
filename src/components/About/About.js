@@ -55,21 +55,21 @@ const About = () => {
 							href='https://github.com/syedahalam'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<FaGithub className='mx-3' size={36} />
+							<FaGithub className='mx-3' size={36} color='black'/>
 						</a>
 
 						<a
 							href='https://www.linkedin.com/in/syedahalam/'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<FaLinkedin className='mx-3' size={36} color='#0e76a8' />
+							<FaLinkedin className='mx-3' size={36} color='black' />
 						</a>
 
 						<a
 							href='https://twitter.com/syedahalam1'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<FaTwitter className='mx-3' size={36}  />
+							<FaTwitter className='mx-3' size={36} color='black' />
 						</a>
 					</div>
 				</div>
