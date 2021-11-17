@@ -21,9 +21,6 @@
     text-align: center;
     width: 100%;
     background: none;
-   
-
-
 }
 .btn-main-offer:hover{
     background-color: var(--primary-orange);
@@ -44,19 +41,34 @@
     box-shadow: none !important;
     margin-bottom: 1rem;
     padding-left:0 !important;
+    color:orange !important;
 }
 .contacts .container{
-    padding: 4rem;
+    padding: 4rem 0;
 }
 .contacts input:focus, .contacts textarea:focus{
     background: transparent;
     color: var(--primary-orange);
     border-bottom: 0.12rem solid darkgray !important;
-}
-.contacts textarea{
-    height: 12.4rem !important;
     
 }
+.contacts textarea{
+    height: 12.4rem !important;    
+}
+p{
+    color: white;
+}
+.error-message{
+    color: white;
+    background-color: red;
+    text-align: left;
+}
+.success-message{
+    font-weight:900;
+    color: green;
+    
+}
+
 /* media */
 @media(max-width:768px){
     .contacts .container{
