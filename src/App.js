@@ -9,6 +9,8 @@ import Projects from './components/Projects/Projects';
 import Contactme from './components/Contactme/Contactme';
 import Footer from './components/Footer/Footer';
 
+// library.add(fab, faCheckSquare, faCoffee);
+
 
 
 
