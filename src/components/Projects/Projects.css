@@ -21,11 +21,11 @@
     margin-top:6rem;
     color: orange;
 }
-/* .image-box-wrapper{
+.image-box-wrapper{
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-} */
+}
 .overflow{
     position: absolute;
     opacity: 1;
@@ -57,8 +57,11 @@
 }
 .hyper-link:hover{
    
-    /* color: red; */
+    color:orange;
     
+}
+p{
+    color: black !important;
 }
 
 

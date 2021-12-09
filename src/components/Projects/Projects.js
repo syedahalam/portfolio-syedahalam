@@ -22,22 +22,22 @@ const Projects = () => {
 					By the end of the game their total score is shown with the option to
 					play again or quit. Trivia is Html, CSS, Javascript based web app.
 				</p>
-				<b>Github:</b>
+				<b>Github: </b>
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/Trivia-Game')
-					}>
-					https://github.com/syedahalam/Trivia-Game
+					}>  Cats Trivia 
+					{/* https://github.com/syedahalam/Trivia-Game */}
 				</a>
 				<br />
-				<b>Deployed Website</b>
+				<b>Deployed Website: </b>
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://kind-swartz-4bd055.netlify.app/')
-					}>
-					https://syedahalam.github.io/Trivia-Project01/
+					}> Cats Trivia
+					{/* https://syedahalam.github.io/Trivia-Project01/ */}
 				</a>
 			</>
 		);
@@ -218,21 +218,27 @@ const Projects = () => {
 						{/* <div className='overflow'></div> */}
 						{/* come back for styling */}
 					</div>
-
+				
+			
 					<div className='portfolio-image-box' onClick={openPopupboxMeal}>
 						<img src={Meal} alt='meals-idea' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
 					</div>
+				
 
+			
 					<div className='portfolio-image-box' onClick={openPopupboxTouring}>
 						<img src={Touring} alt='touring' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
 					</div>
+				
 
+				
 					<div className='portfolio-image-box' onClick={openPopupboxUShop}>
 						<img src={UShop} alt='touring' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
 					</div>
+				
 				</div>
 			</div>
 			<PopupboxContainer {...popupboxConfigTrivia} />
