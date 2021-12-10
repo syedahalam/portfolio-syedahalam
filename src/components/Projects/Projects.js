@@ -66,21 +66,19 @@ const Projects = () => {
 					category links. On choosing a particular meal, they can see
 					instructions with video on how to make that particular dish.
 				</p>
-				<b>Github:</b>
+				<b>Github: </b>
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/meal-idea')
-					}> Meal Idea
+					}>Meal Idea
 					{/* https://github.com/syedahalam/meal-idea */}
 				</a>
 				<br />
 				<b>Deployed Website: </b>
 				<a
 					className='hyper-link'
-					onClick={() =>
-						window.open('https://nifty-allen-7a59f4.netlify.app/')
-					}> Meal Idea
+					onClick={() => window.open('https://meal-idea.netlify.app')}>Meal Idea
 					{/* https://nifty-allen-7a59f4.netlify.app/ */}
 				</a>
 			</>
@@ -96,89 +94,53 @@ const Projects = () => {
 		fadeInSpeed: 500,
 	};
 
-	// ///////////////
-	// // Tou-ring
-	const openPopupboxTouring = () => {
-		const content = (
-			<>
-				<img
-					className='portfolio-image-popupbox'
-					src={Touring}
-					alt='Touring project'
-				/>
-				<p>
-					A full stack mern web app. React, CSS, REST APIs are used as frontend
-					technologies and for backend, node, express and the mongoDB nosql
-					database. This is a full-CRUD React single page application that
-					allows users to view attractions in any city, and add their favorite
-					attractions for others to see! The Categories page lets users search
-					by city, genre, or name, and filters results for them in real time.
-				</p>
-				<b>Github: </b>
-				<a
-					className='hyper-link'
-					onClick={() =>
-						window.open(
-							'https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client'
-						)
-					}> Frontend
-					{/* https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client */}
-				</a>
-				<br />
-				<b>Deployed Website</b>
-				<a
-					className='hyper-link'
-					onClick={() =>
-						window.open('https://happy-shannon-d1fdea.netlify.app/')
-					}>Tou-ring
-					{/* https://happy-shannon-d1fdea.netlify.app/ */}
-				</a>
-			</>
-		);
-		PopupboxManager.open({ content });
-	};
-	const popupboxConfigTouring = {
-		titleBar: {
-			enable: true,
-			// text: 'Tou-ring',
-		},
-		fadeIn: true,
-		fadeInSpeed: 500,
-	};
-	// ///////////////////////
-	// ///////////////
-	// // UShop
+	
+//////////////////////////////////////////////////////////
 
 	const openPopupboxUShop = () => {
 		const content = (
 			<>
-				<img className='portfolio-image-popupbox' src={UShop} alt='UShop' />
+				<img
+					className='portfolio-image-popupbox'
+					src={UShop}
+					alt='UShop project'
+				/>
 				<p>
-					A full stack mern web app. React, CSS, REST APIs are used as frontend
-					technologies and for backend, node, express and the mongoDB nosql
-					database. This is a full-CRUD React single page application that
-					allows users to view attractions in any city, and add their favorite
-					attractions for others to see! The Categories page lets users search
-					by city, genre, or name, and filters results for them in real time.
+					A full stack web app. React and Bootstrap are used as frontend
+					technologies and for backend, django, and postgresql as databases.
+					This is a full-CRUD React ecommerce application that allows users to
+					view their choice of products, add to cart, and shop.
 				</p>
 				<b>Github:</b>
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/ushop-front')
-					}>
-					ushop
-					{/* https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client */}
+					}> Frontend 
+					{/* https://github.com/syedahalam/ushop-front */}
 				</a>
 				<br />
-				<b>Deployed Website</b>
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/ushop-back')
-					}>
-					ushop
+					}> Backend 
+					{/* https://github.com/syedahalam/ushop-back */}
+				</a>
+				<br />
+				<b>Deployed Website: </b>
+				<a
+					className='hyper-link'
+					onClick={() => window.open('https://ushop-4.netlify.app/')}> UShop Frontend
 					{/* https://happy-shannon-d1fdea.netlify.app/ */}
+				</a>
+					<br />
+				<a
+					className='hyper-link'
+					onClick={() =>
+						window.open('https://stormy-journey-70089.herokuapp.com')
+					}> UShop Backend
+					{/* https://stormy-journey-70089.herokuapp.com */}
 				</a>
 			</>
 		);
@@ -192,15 +154,6 @@ const Projects = () => {
 		fadeIn: true,
 		fadeInSpeed: 500,
 	};
-
-
-
-
-
-
-//////////////////////////////////////////////////////////
-
-	
 	///////////////////////
 	return (
 		<div id='projects' className='portfolio-wrapper'>
@@ -221,14 +174,6 @@ const Projects = () => {
 						{/* <div className='overflow'></div> */}
 					 </div> 
 				
-
-			
-					 <div className='portfolio-image-box' onClick={openPopupboxTouring}>
-						<img src={Touring} alt='touring' className='portfolio-img' /> 
-						{/* <div className='overflow'></div> */}
-					 </div>
-				
-
 				
 					<div className='portfolio-image-box' onClick={openPopupboxUShop}>
 						<img src={UShop} alt='touring' className='portfolio-img' />
@@ -239,7 +184,6 @@ const Projects = () => {
 			</div>
 			<PopupboxContainer {...popupboxConfigTrivia} />
 		    <PopupboxContainer {...popupboxConfigMeal} />
-			<PopupboxContainer {...popupboxConfigTouring} />
 			<PopupboxContainer {...popupboxConfigUShop} />  
 		</div>
 	);
