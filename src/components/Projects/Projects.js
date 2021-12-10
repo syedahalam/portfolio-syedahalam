@@ -71,17 +71,17 @@ const Projects = () => {
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/meal-idea')
-					}>
-					https://github.com/syedahalam/meal-idea
+					}> Meal Idea
+					{/* https://github.com/syedahalam/meal-idea */}
 				</a>
 				<br />
-				<b>Deployed Website</b>
+				<b>Deployed Website: </b>
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://nifty-allen-7a59f4.netlify.app/')
-					}>
-					https://nifty-allen-7a59f4.netlify.app/
+					}> Meal Idea
+					{/* https://nifty-allen-7a59f4.netlify.app/ */}
 				</a>
 			</>
 		);
@@ -114,15 +114,15 @@ const Projects = () => {
 					attractions for others to see! The Categories page lets users search
 					by city, genre, or name, and filters results for them in real time.
 				</p>
-				<b>Github:</b>
+				<b>Github: </b>
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open(
 							'https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client'
 						)
-					}>
-					https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client
+					}> Frontend
+					{/* https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client */}
 				</a>
 				<br />
 				<b>Deployed Website</b>
@@ -130,8 +130,8 @@ const Projects = () => {
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://happy-shannon-d1fdea.netlify.app/')
-					}>
-					https://happy-shannon-d1fdea.netlify.app/
+					}>Tou-ring
+					{/* https://happy-shannon-d1fdea.netlify.app/ */}
 				</a>
 			</>
 		);
