@@ -46,7 +46,7 @@ const Projects = () => {
 	const popupboxConfigTrivia = {
 		titleBar: {
 			enable: true,
-			text: 'Trivia-Cats',
+			// text: 'Trivia-Cats',
 		},
 		fadeIn: true,
 		fadeInSpeed: 500,
@@ -90,14 +90,14 @@ const Projects = () => {
 	const popupboxConfigMeal = {
 		titleBar: {
 			enable: true,
-			text: 'Meal-Idea',
+			// text: 'Meal-Idea',
 		},
 		fadeIn: true,
 		fadeInSpeed: 500,
 	};
 
-	///////////////
-	// Tou-ring
+	// ///////////////
+	// // Tou-ring
 	const openPopupboxTouring = () => {
 		const content = (
 			<>
@@ -140,27 +140,26 @@ const Projects = () => {
 	const popupboxConfigTouring = {
 		titleBar: {
 			enable: true,
-			text: 'Tou-ring',
+			// text: 'Tou-ring',
 		},
 		fadeIn: true,
 		fadeInSpeed: 500,
 	};
-	///////////////////////
-	///////////////
-	// UShop
+	// ///////////////////////
+	// ///////////////
+	// // UShop
+
 	const openPopupboxUShop = () => {
 		const content = (
 			<>
-				<img
-					className='portfolio-image-popupbox'
-					src={UShop}
-					alt='UShop project'
-				/>
+				<img className='portfolio-image-popupbox' src={UShop} alt='UShop' />
 				<p>
-					A full stack web app. React and Bootstrap are used as frontend
-					technologies and for backend, django, and postgresql as databases.
-					This is a full-CRUD React ecommerce application that allows users to
-					view their choice of products, add to cart, and shop.
+					A full stack mern web app. React, CSS, REST APIs are used as frontend
+					technologies and for backend, node, express and the mongoDB nosql
+					database. This is a full-CRUD React single page application that
+					allows users to view attractions in any city, and add their favorite
+					attractions for others to see! The Categories page lets users search
+					by city, genre, or name, and filters results for them in real time.
 				</p>
 				<b>Github:</b>
 				<a
@@ -168,30 +167,18 @@ const Projects = () => {
 					onClick={() =>
 						window.open('https://github.com/syedahalam/ushop-front')
 					}>
-					https://github.com/syedahalam/ushop-front
-				</a>
-				<br />
-				<a
-					className='hyper-link'
-					onClick={() =>
-						window.open('https://github.com/syedahalam/ushop-back')
-					}>
-					https://github.com/syedahalam/ushop-back
+					ushop
+					{/* https://github.com/SEIR-809-Project3-SquadCarlos/project-3-client */}
 				</a>
 				<br />
 				<b>Deployed Website</b>
 				<a
 					className='hyper-link'
-					onClick={() => window.open('https://ushop-4.netlify.app/')}>
-					https://happy-shannon-d1fdea.netlify.app/
-				</a>
-					<br />
-				<a
-					className='hyper-link'
 					onClick={() =>
-						window.open('https://stormy-journey-70089.herokuapp.com')
+						window.open('https://github.com/syedahalam/ushop-back')
 					}>
-					https://stormy-journey-70089.herokuapp.com
+					ushop
+					{/* https://happy-shannon-d1fdea.netlify.app/ */}
 				</a>
 			</>
 		);
@@ -200,11 +187,20 @@ const Projects = () => {
 	const popupboxConfigUShop = {
 		titleBar: {
 			enable: true,
-			text: 'UShop',
+			// text: 'UShop',
 		},
 		fadeIn: true,
 		fadeInSpeed: 500,
 	};
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+
+	
 	///////////////////////
 	return (
 		<div id='projects' className='portfolio-wrapper'>
@@ -220,31 +216,31 @@ const Projects = () => {
 					</div>
 				
 			
-					<div className='portfolio-image-box' onClick={openPopupboxMeal}>
+					 <div className='portfolio-image-box' onClick={openPopupboxMeal}>
 						<img src={Meal} alt='meals-idea' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
-					</div>
+					 </div> 
 				
 
 			
-					<div className='portfolio-image-box' onClick={openPopupboxTouring}>
-						<img src={Touring} alt='touring' className='portfolio-img' />
+					 <div className='portfolio-image-box' onClick={openPopupboxTouring}>
+						<img src={Touring} alt='touring' className='portfolio-img' /> 
 						{/* <div className='overflow'></div> */}
-					</div>
+					 </div>
 				
 
 				
 					<div className='portfolio-image-box' onClick={openPopupboxUShop}>
 						<img src={UShop} alt='touring' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
-					</div>
+				 </div> 
 				
 				</div>
 			</div>
 			<PopupboxContainer {...popupboxConfigTrivia} />
-			<PopupboxContainer {...popupboxConfigMeal} />
+		    <PopupboxContainer {...popupboxConfigMeal} />
 			<PopupboxContainer {...popupboxConfigTouring} />
-			<PopupboxContainer {...popupboxConfigUShop} />
+			<PopupboxContainer {...popupboxConfigUShop} />  
 		</div>
 	);
 };
