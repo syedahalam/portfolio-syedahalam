@@ -4,11 +4,58 @@ import Trivia from '../images/Trivia.png';
 import Meal from '../images/Meal-Idea.png';
 import Touring from '../images/Tou-ring.png';
 import UShop from '../images/ushop.png';
+import FoodApp from '../images/food.jpg';
 // import react popup box
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import 'react-popupbox/dist/react-popupbox.css';
 const Projects = () => {
-	//Trivia
+	//Food App
+
+	const openPopupboxFoodApp = () => {
+		const content = (
+			<>
+				<img
+					className='portfolio-image-popupbox'
+					src={FoodApp}
+					alt='Food App project'
+				/>
+				<p>
+					Food App is a beautifully designed web app, built with Html, CSS and a
+					bit of Javascript. Visitors can look into different meal plan options
+					and get cooked meals of their choice with subscription anytime and
+					anywhere.
+				</p>
+				<b>Github: </b>
+				<a
+					className='hyper-link'
+					onClick={() => window.open('https://github.com/syedahalam/food-app')}>
+					{' '}
+					Meal Subscription App
+					{/* https://github.com/syedahalam/Trivia-Game */}
+				</a>
+				<br />
+				<b>Deployed Website: </b>
+				<a
+					className='hyper-link'
+					onClick={() => window.open('https://foodapp-omnifood.netlify.app/')}>
+					{' '}
+					Meal Subscription App
+					{/* https://syedahalam.github.io/Trivia-Project01/ */}
+				</a>
+			</>
+		);
+		PopupboxManager.open({ content });
+	};
+	const popupboxConfigFoodApp = {
+		titleBar: {
+			enable: true,
+			// text: 'Trivia-Cats',
+		},
+		fadeIn: true,
+		fadeInSpeed: 500,
+	};
+
+	//////////////////////////////////////Trivia///////////////////////////////////////
 	const openPopupboxTrivia = () => {
 		const content = (
 			<>
@@ -27,7 +74,9 @@ const Projects = () => {
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/Trivia-Game')
-					}>  Cats Trivia 
+					}>
+					{' '}
+					Cats Trivia
 					{/* https://github.com/syedahalam/Trivia-Game */}
 				</a>
 				<br />
@@ -36,7 +85,9 @@ const Projects = () => {
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://kind-swartz-4bd055.netlify.app/')
-					}> Cats Trivia
+					}>
+					{' '}
+					Cats Trivia
 					{/* https://syedahalam.github.io/Trivia-Project01/ */}
 				</a>
 			</>
@@ -71,14 +122,16 @@ const Projects = () => {
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/meal-idea')
-					}>Meal Idea
+					}>
+					Meal Idea
 					{/* https://github.com/syedahalam/meal-idea */}
 				</a>
 				<br />
 				<b>Deployed Website: </b>
 				<a
 					className='hyper-link'
-					onClick={() => window.open('https://meal-idea.netlify.app')}>Meal Idea
+					onClick={() => window.open('https://meal-idea.netlify.app')}>
+					Meal Idea
 					{/* https://nifty-allen-7a59f4.netlify.app/ */}
 				</a>
 			</>
@@ -94,8 +147,7 @@ const Projects = () => {
 		fadeInSpeed: 500,
 	};
 
-	
-//////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////
 
 	const openPopupboxUShop = () => {
 		const content = (
@@ -116,7 +168,9 @@ const Projects = () => {
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/ushop-front')
-					}> Frontend 
+					}>
+					{' '}
+					Frontend
 					{/* https://github.com/syedahalam/ushop-front */}
 				</a>
 				<br />
@@ -124,22 +178,28 @@ const Projects = () => {
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://github.com/syedahalam/ushop-back')
-					}> Backend 
+					}>
+					{' '}
+					Backend
 					{/* https://github.com/syedahalam/ushop-back */}
 				</a>
 				<br />
 				<b>Deployed Website: </b>
 				<a
 					className='hyper-link'
-					onClick={() => window.open('https://ushop-4.netlify.app/')}> UShop Frontend
+					onClick={() => window.open('https://ushop-4.netlify.app/')}>
+					{' '}
+					UShop Frontend
 					{/* https://happy-shannon-d1fdea.netlify.app/ */}
 				</a>
-					<br />
+				<br />
 				<a
 					className='hyper-link'
 					onClick={() =>
 						window.open('https://stormy-journey-70089.herokuapp.com')
-					}> UShop Backend
+					}>
+					{' '}
+					UShop Backend
 					{/* https://stormy-journey-70089.herokuapp.com */}
 				</a>
 			</>
@@ -162,29 +222,33 @@ const Projects = () => {
 					Projects
 				</h1>
 				<div className='image-box-wrapper row justify-content-center'>
+					<div className='portfolio-image-box' onClick={openPopupboxFoodApp}>
+						<img className='portfolio-img' src={FoodApp} alt='Food App' />
+						{/* <div className='overflow'></div> */}
+						{/* come back for styling */}
+					</div>
+
 					<div className='portfolio-image-box' onClick={openPopupboxTrivia}>
 						<img className='portfolio-img' src={Trivia} alt='trivia' />
 						{/* <div className='overflow'></div> */}
 						{/* come back for styling */}
 					</div>
-				
-			
-					 <div className='portfolio-image-box' onClick={openPopupboxMeal}>
+
+					<div className='portfolio-image-box' onClick={openPopupboxMeal}>
 						<img src={Meal} alt='meals-idea' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
-					 </div> 
-				
-				
+					</div>
+
 					<div className='portfolio-image-box' onClick={openPopupboxUShop}>
 						<img src={UShop} alt='touring' className='portfolio-img' />
 						{/* <div className='overflow'></div> */}
-				 </div> 
-				
+					</div>
 				</div>
 			</div>
+			<PopupboxContainer {...popupboxConfigFoodApp} />
 			<PopupboxContainer {...popupboxConfigTrivia} />
-		    <PopupboxContainer {...popupboxConfigMeal} />
-			<PopupboxContainer {...popupboxConfigUShop} />  
+			<PopupboxContainer {...popupboxConfigMeal} />
+			<PopupboxContainer {...popupboxConfigUShop} />
 		</div>
 	);
 };
